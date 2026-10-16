@@ -1,286 +1,341 @@
-# 🏆 Online Judge Platform
+# CodeArena — Online Judge Platform
 
-<div align="center">
+A full-stack competitive programming platform built to help developers practice coding, execute solutions, solve programming problems, and track their progress in one place.
 
-![Online Judge](https://img.shields.io/badge/Online-Judge-blue?style=for-the-badge&logo=code&logoColor=white)
-![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+**Repository:** [Pragati4566/CodeArena](https://github.com/Pragati4566/CodeArena)
 
-*A comprehensive competitive programming platform for coding enthusiasts*
+<p align="left">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-API-000000?style=flat&logo=express&logoColor=white" alt="Express.js" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
+</p>
 
-[🚀 Features](#-features) • [🛠️ Tech Stack](#️-tech-stack) • [📦 Installation](#-installation) • [🔧 Usage](#-usage) • [📸 Screenshots](#-screenshots)
+## Overview
 
-</div>
+CodeArena is a web-based online judge designed around the coding practice workflow. It brings together a problem-solving interface, an integrated code editor, a backend API, a database, and a compiler service.
 
-## 📋 Table of Contents
+The platform supports multiple programming languages and allows users to write solutions, execute code against test cases, submit answers, and review their results.
 
-- [Overview](#-overview)
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🏗️ Architecture](#️-architecture)
-- [📦 Installation](#-installation)
-- [🔧 Usage](#-usage)
-- [🌟 Key Highlights](#-key-highlights)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+The project combines frontend development, backend engineering, database management, authentication, and code execution into a single application.
 
-## 🎯 Overview
+## Features
 
-**Online Judge** is a full-stack competitive programming platform that enables users to solve coding problems, participate in contests, and track their progress. Built with modern web technologies, it provides a seamless coding experience similar to platforms like LeetCode, HackerRank, and Codeforces.
+### 1. Coding and Problem Solving
 
-The platform supports multiple programming languages, real-time code execution, comprehensive problem management, and detailed analytics to help users improve their coding skills.
+- Browse programming problems and their descriptions.
+- Solve problems across Easy, Medium, and Hard difficulty levels.
+- Write code using an integrated Monaco Editor.
+- Benefit from syntax highlighting and editor autocomplete.
+- Execute code against test cases.
+- Submit solutions and inspect their verdicts.
 
-## ✨ Features
+### 2. Multi-Language Code Execution
 
-### 🏃‍♂️ **Core Functionality**
-- **Multi-Language Support**: C++, Java, Python with syntax highlighting
-- **Real-time Code Execution**: Instant compilation and execution with custom test cases
-- **Problem Solving Interface**: Clean, intuitive problem-solving environment
-- **Advanced Code Editor**: Monaco Editor with IntelliSense, auto-completion, and themes
+CodeArena supports the following programming languages:
 
-### 👑 **User Management**
-- **Authentication System**: Secure JWT-based login/signup
-- **User Profiles**: Comprehensive statistics and submission history
-- **Role-based Access**: Admin and user roles with different permissions
-- **Progress Tracking**: Detailed analytics on coding performance
+- **C++** — compiled execution.
+- **Java** — compiled execution.
+- **Python** — interpreted execution.
 
-### 🏆 **Competition Features**
-- **Leaderboard System**: Real-time rankings based on coding scores
-- **Problem Categories**: Easy, Medium, Hard difficulty levels
-- **Submission History**: Track all attempts with verdict details
-- **Performance Analytics**: Acceptance rates, problem distribution
+A dedicated compiler service handles code execution separately from the main application backend.
 
-### 🔧 **Administrative Tools**
-- **Admin Dashboard**: Comprehensive platform management
-- **Problem Management**: Create, edit, delete problems with test cases
-- **User Management**: Monitor users, update roles, view statistics
-- **Content Control**: Full CRUD operations for problems and users
+### 3. User Authentication and Profiles
 
-### 💻 **Developer Experience**
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **Code Snippets**: Pre-built templates for common patterns
-- **Keyboard Shortcuts**: Enhanced productivity with hotkeys
-- **Theme Support**: Dark/Light modes with high contrast options
+- User registration and login.
+- JWT-based authentication.
+- Password hashing.
+- User profiles and submission history.
+- Role-based access for users and administrators.
+- Coding progress and performance statistics.
 
-## 🛠️ Tech Stack
+### 4. Submission Tracking and Rankings
 
-### **Frontend**
-- **Framework**: React 19.1.0 with Hooks
-- **Styling**: Tailwind CSS with responsive design
-- **Code Editor**: Monaco Editor with multi-language support
-- **UI Components**: React Icons, React Toastify
-- **Routing**: React Router DOM 7.6.2
-- **State Management**: React Hooks and Context
-- **Build Tool**: Vite for fast development
+- Maintain a history of submitted solutions.
+- Review submission verdicts.
+- Track problem-solving activity.
+- Organize problems by difficulty.
+- View leaderboard rankings and available performance statistics.
 
-### **Backend**
-- **Runtime**: Node.js with Express.js 5.1.0
-- **Database**: MongoDB with Mongoose ODM
-- **Authentication**: JWT (JSON Web Tokens)
-- **Security**: bcrypt for password hashing
-- **Validation**: Joi for input validation
-- **CORS**: Cross-origin resource sharing enabled
+### 5. Administrative Dashboard
 
-### **Compiler Service**
-- **Language Support**: C++, Java, Python execution
-- **File Management**: UUID-based temporary file handling
-- **Security**: Sandboxed code execution
-- **Performance**: Optimized compilation and execution
+Administrative functionality supports platform management, including:
 
-### **Database Schema**
-- **Users**: Profile data, statistics, solved problems
-- **Problems**: Title, difficulty, test cases, scoring
-- **Submissions**: Code, language, verdict, execution details
-- **Test Cases**: Input/output pairs for problem validation
+- Creating, updating, and deleting programming problems.
+- Managing test cases associated with problems.
+- Viewing user information and managing roles.
+- Maintaining problem and platform data.
 
-## 🏗️ Architecture
+### 6. User Interface
 
+- React-based frontend.
+- Responsive layouts with Tailwind CSS.
+- Monaco Editor integration.
+- React Router-based navigation.
+- Theme support and editor customization.
+- User feedback through notifications.
+
+## Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React 19, JavaScript, Tailwind CSS |
+| Code Editor | Monaco Editor |
+| Routing | React Router DOM |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| Authentication | JSON Web Tokens (JWT) |
+| Password Security | bcrypt |
+| Input Validation | Joi |
+| Compiler Service | Node.js-based execution service |
+| Frontend Build Tool | Vite |
+
+## System Architecture
+
+CodeArena uses a modular architecture that separates the user interface, application backend, code execution service, and persistent storage.
+
+```text
+                   ┌─────────────────────────┐
+                   │       User / Browser    │
+                   └────────────┬────────────┘
+                                │
+                                ▼
+                   ┌─────────────────────────┐
+                   │     React Frontend      │
+                   │   Monaco Code Editor    │
+                   └────────────┬────────────┘
+                                │
+                      API Requests / Responses
+                                │
+                                ▼
+                   ┌─────────────────────────┐
+                   │    Express Backend      │
+                   │ Authentication & APIs   │
+                   └──────────┬───────┬──────┘
+                              │       │
+                              ▼       ▼
+                    ┌────────────┐  ┌───────────────┐
+                    │  MongoDB   │  │ Compiler      │
+                    │  Database  │  │ Service       │
+                    └────────────┘  └───────┬───────┘
+                                            │
+                                            ▼
+                                   Code Execution
+                                 C++ / Java / Python
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│                 │    │                 │    │                 │
-│   Frontend      │    │   Backend       │    │   Compiler      │
-│   (React)       │◄──►│   (Express)     │◄──►│   Service       │
-│                 │    │                 │    │                 │
-│ • Monaco Editor │    │ • REST APIs     │    │ • Code Exec     │
-│ • Responsive UI │    │ • JWT Auth      │    │ • Multi-lang    │
-│ • Real-time UX  │    │ • MongoDB       │    │ • Sandboxing    │
-│                 │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                    ┌─────────────────┐
-                    │                 │
-                    │   MongoDB       │
-                    │   Database      │
-                    │                 │
-                    │ • Users         │
-                    │ • Problems      │
-                    │ • Submissions   │
-                    │ • Test Cases    │
-                    │                 │
-                    └─────────────────┘
+
+### Application Flow
+
+1. A user selects a programming problem and writes a solution in the code editor.
+2. The frontend communicates with the backend through API requests.
+3. The compiler service processes the code using the selected language.
+4. The execution results are returned to the application.
+5. The submission workflow uses the relevant test cases and verdicts to evaluate the solution.
+6. User and submission information is stored in MongoDB where required.
+
+## Database Overview
+
+The application uses MongoDB to manage its main application data.
+
+| Entity | Purpose |
+|---|---|
+| Users | Account information, roles, and profile statistics |
+| Problems | Problem statements, difficulty, and associated metadata |
+| Submissions | Submitted code, programming language, verdict, and execution details |
+| Test Cases | Inputs and expected outputs used to evaluate solutions |
+
+The exact schema and relationships depend on the corresponding models implemented in the application.
+
+## Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Install the following tools before starting:
+
+- Node.js and npm.
+- MongoDB, running locally or through a configured database service.
+- A C++ compiler, such as `g++`.
+- Java Development Kit (JDK).
+- Python 3.
+- Git.
+
+Ensure the language runtimes are available to the compiler service through your system's `PATH`.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Pragati4566/CodeArena.git
+cd CodeArena/Online-Judge-main
 ```
 
-## 📦 Installation
+### 2. Configure the Backend
 
-### **Prerequisites**
-- Node.js (v16 or higher)
-- MongoDB (v4.4 or higher)
-- npm or yarn package manager
+```bash
+cd backend
+npm install
+```
 
-### **Quick Start**
+Create a `.env` file inside the backend directory:
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Ritik82/Online-Judge.git
-   cd Online-Judge
-   ```
+```env
+MONGO_URI=mongodb://localhost:27017/onlinejudge
+JWT_SECRET=replace_with_a_secure_secret
+PORT=5000
+```
 
-2. **Setup Backend**
-   ```bash
-   cd backend
-   npm install
-   
-   # Create .env file
-   echo "MONGO_URI=mongodb://localhost:27017/onlinejudge
-   JWT_SECRET=your_super_secret_key
-   PORT=5000" > .env
-   
-   # Add sample problems (optional)
-   node addSampleProblems.js
-   ```
+Replace the example JWT secret with a secure value appropriate for your environment.
 
-3. **Setup Compiler Service**
-   ```bash
-   cd ../compiler
-   npm install
-   
-   # Create .env file
-   echo "PORT=3001
-   MONGO_URI=mongodb://localhost:27017/onlinejudge" > .env
-   ```
+If the repository contains a sample-problem seeding script, run it according to its implementation to populate initial problem data.
 
-4. **Setup Frontend**
-   ```bash
-   cd ../frontend
-   npm install
-   
-   # Create .env file
-   echo "VITE_API_URL=http://localhost:5000
-   VITE_AUTH_URL=http://localhost:5000
-   VITE_COMPILER_URL=http://localhost:3001" > .env
-   ```
+### 3. Configure the Compiler Service
 
-5. **Start All Services**
-   ```bash
-   # Terminal 1 - Backend
-   cd backend && npm start
-   
-   # Terminal 2 - Compiler Service
-   cd compiler && npm start
-   
-   # Terminal 3 - Frontend
-   cd frontend && npm run dev
-   ```
+Open a separate terminal:
 
-6. **Access the Application**
-   - Frontend: `http://localhost:5173`
-   - Backend API: `http://localhost:5000`
-   - Compiler Service: `http://localhost:3001`
+```bash
+cd CodeArena/Online-Judge-main/compiler
+npm install
+```
 
-## 🔧 Usage
+Create the compiler service's `.env` file if required by its configuration:
 
-### **For Users**
+```env
+PORT=3001
+MONGO_URI=mongodb://localhost:27017/onlinejudge
+```
 
-1. **Registration**: Create an account with email and password
-2. **Problem Solving**: Browse problems by difficulty and solve them
-3. **Code Editor**: Write code with syntax highlighting and auto-completion
-4. **Testing**: Run custom test cases before submission
-5. **Submission**: Submit solutions and get instant verdicts
-6. **Progress Tracking**: Monitor your performance on the leaderboard
+Confirm which environment variables the compiler service actually reads before starting it.
 
-### **For Administrators**
+### 4. Configure the Frontend
 
-1. **Admin Access**: Login with admin credentials
-2. **Problem Management**: Create, edit, and delete problems
-3. **User Management**: Monitor users and manage roles
-4. **Analytics**: View platform statistics and user metrics
-5. **Content Moderation**: Oversee submissions and maintain quality
+Open another terminal:
 
-### **Supported Languages**
+```bash
+cd CodeArena/Online-Judge-main/frontend
+npm install
+```
 
-| Language | Extension | Compiler/Interpreter |
-|----------|-----------|---------------------|
-| C++      | `.cpp`    | g++ with C++17      |
-| Java     | `.java`   | OpenJDK 11+         |
-| Python   | `.py`     | Python 3.8+         |
+Create a frontend `.env` file:
 
-## 🌟 Key Highlights
+```env
+VITE_API_URL=http://localhost:5000
+VITE_AUTH_URL=http://localhost:5000
+VITE_COMPILER_URL=http://localhost:3001
+```
 
-### **🚀 Performance**
-- **Fast Compilation**: Optimized compiler service for quick execution
-- **Efficient Database**: Indexed queries for rapid data retrieval
-- **Responsive UI**: Smooth interactions with modern React patterns
-- **Real-time Updates**: Live leaderboard and submission tracking
+These URLs assume that the backend and compiler service use ports `5000` and `3001`, respectively.
 
-### **🔒 Security**
-- **Secure Authentication**: JWT-based token system
-- **Input Validation**: Comprehensive data sanitization
-- **CORS Protection**: Configured cross-origin policies
-- **Sandboxed Execution**: Isolated code execution environment
+### 5. Start the Services
 
-### **📱 User Experience**
-- **Mobile Responsive**: Works seamlessly on all devices
-- **Intuitive Interface**: Clean, modern design with excellent UX
-- **Accessibility**: Keyboard navigation and screen reader support
-- **Performance Metrics**: Detailed analytics and progress tracking
+Start each service in its own terminal.
 
-### **🔧 Developer Friendly**
-- **Modern Stack**: Latest versions of React, Node.js, and MongoDB
-- **Clean Architecture**: Well-organized, maintainable codebase
-- **Comprehensive API**: RESTful endpoints with clear documentation
-- **Easy Deployment**: Docker-ready with environment configurations
+**Backend**
 
-## 🤝 Contributing
+```bash
+cd CodeArena/Online-Judge-main/backend
+npm start
+```
 
-We welcome contributions from the community! Here's how you can help:
+**Compiler service**
 
-### **Getting Started**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+```bash
+cd CodeArena/Online-Judge-main/compiler
+npm start
+```
 
-### **Development Guidelines**
-- Follow the existing code style and conventions
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
+**Frontend**
 
-### **Areas for Contribution**
-- 🐛 Bug fixes and improvements
-- ✨ New features and enhancements
-- 📚 Documentation improvements
-- 🧪 Test coverage expansion
-- 🎨 UI/UX enhancements
-- 🌐 Internationalization support
+```bash
+cd CodeArena/Online-Judge-main/frontend
+npm run dev
+```
 
-## 📄 License
+Use the scripts defined in each directory's `package.json` if the available commands differ.
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+### 6. Open the Application
+
+When all three services are running on their configured local ports, open:
+
+| Service | Default URL |
+|---|---|
+| Frontend | http://localhost:5173 |
+| Backend | http://localhost:5000 |
+| Compiler service | http://localhost:3001 |
+
+The actual addresses may differ depending on your local configuration.
+
+## How to Use CodeArena
+
+### For Users
+
+1. Register an account or sign in.
+2. Explore the available programming problems.
+3. Select a problem and review its statement.
+4. Choose a supported programming language.
+5. Write your solution in the integrated editor.
+6. Run your code and review the execution output.
+7. Submit your solution and inspect the resulting verdict.
+8. Review your submission history and available performance statistics.
+
+### For Administrators
+
+1. Sign in with an account that has the required administrative permissions.
+2. Create or update programming problems.
+3. Configure the relevant test cases.
+4. Manage users and access roles.
+5. Review the available platform statistics.
+
+Administrative operations depend on the permissions and endpoints implemented in the application.
+
+## Security Considerations
+
+Code execution platforms require particular care because submitted programs may be untrusted.
+
+The application includes authentication-related functionality and a separate compiler service. For deployment beyond a local development environment, additional security controls should be verified, including:
+
+- Process and filesystem isolation for submitted programs.
+- Execution time and memory limits.
+- Restrictions on network access and system calls.
+- Protection against command injection and malicious input.
+- Secure handling of authentication secrets.
+- Appropriate rate limits and error handling.
+
+A separate compiler service does not, by itself, guarantee secure sandboxing. Review the actual execution implementation before running untrusted submissions on a public server.
+
+## Key Engineering Concepts
+
+Building CodeArena brings together several practical software engineering concepts:
+
+- **Full-stack development:** Connecting a React application with backend APIs and persistent storage.
+- **API design:** Defining communication between the frontend and server-side components.
+- **Authentication:** Managing sessions and protected operations through JWT-based authentication.
+- **Database modeling:** Organizing users, problems, submissions, and test cases.
+- **Code execution:** Coordinating language-specific compilation or interpretation and collecting execution results.
+- **Problem evaluation:** Comparing program output against expected results.
+- **Component-based architecture:** Separating application responsibilities into maintainable modules.
+- **Error handling:** Managing invalid submissions, execution failures, and unexpected API responses.
+
+## Future Enhancements
+
+Potential areas for extending CodeArena include:
+
+- Additional programming languages.
+- More detailed submission analytics.
+- Contest creation and timed programming rounds.
+- Advanced leaderboard filtering.
+- Stronger execution isolation and resource controls.
+- Automated integration tests.
+- Deployment automation and monitoring.
+- Improved accessibility and editor customization.
+
+These are potential extensions and should not be interpreted as features that are already implemented.
+
+## Acknowledgment
+
+CodeArena is developed as a programming and software engineering project focused on online judging, coding practice, and full-stack application development.
 
 ---
 
-<div align="center">
-
-**Built with ❤️ by [Ritik82](https://github.com/Ritik82)**
-
-⭐ Star this repository if you found it helpful!
-
-[🔝 Back to Top](#-online-judge-platform)
-
-</div>
+**Explore the repository:** [github.com/Pragati4566/CodeArena](https://github.com/Pragati4566/CodeArena)
